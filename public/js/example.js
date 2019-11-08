@@ -18,7 +18,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('.delete').click(function() {
         let newName = $('#nombre').val()
-        console.log("Deleted"+ newName);
+        console.log("Deleted");
         $.post('/delete-user', {name:newName}, function(data, status) {
             console.log(`${data.message} and status is ${status}`)
             alert(data.message)
