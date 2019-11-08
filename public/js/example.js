@@ -12,6 +12,10 @@ $(document).ready(function() {
             })
         }
     })
+})
+
+
+$(document).ready(function() {
     $('.delete').click(function() {
         let newName = $('#nombre').val()
         console.log("Deleted"+ newName);
@@ -25,4 +29,5 @@ $(document).ready(function() {
 
     })
 })
+
 
